@@ -1,32 +1,34 @@
 body {
 	background: linear-gradient(to left, rgb(29, 117, 231), rgb(51, 235, 235));
 	font-family: Arial;
-	margin: 0; /* Elimina el margen predeterminado del cuerpo */
-  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
-  }
-h1
-{
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
 	color: greenyellow;
 	text-align: center;
 }
+
 #botonNuevo {
 	position: absolute;
-	top: 90%; /* Controla la posición vertical */
-	left: 50%; /* Controla la posición horizontal */
-	transform: translate(-50%, -50%); /* Centra el botón en el medio de su contenedor */
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 200px;
 	height: 50px;
-	background-color: #e5e74d; /* Color de fondo */
-	color: #161515; /* Color de texto */
+	background-color: #e5e74d;
+	color: #161515;
 	font-size: 16px;
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
-  }
+}
+
 #mensaje {
 	position: absolute;
-	top: 80%; /* Ajusta la posición vertical (y) según sea necesario */
-	left: 50%; /* Ajusta la posición horizontal (x) según sea necesario */
+	top: 80%;
+	left: 50%;
 	border-radius: 80px;
 	width: 170px;
 	height: 55px;
@@ -36,63 +38,68 @@ h1
 	font-weight: bold;
 	font-size: 20px;
 	z-index: 2;
-	transform: translate(-50%, -50%); /* Centra el elemento horizontal y verticalmente */
-  }
-#mensaje:after{
-  content:" ";
-  position:absolute;
-  width:40px;
-  height:60px;
-  top:50px;
-  left:50px;
-  border-radius:20px;
-  box-shadow: inset 0px 0px #a9def9, inset -16px 0px 1px 2px #a9def9;
-  z-index:1;
+	transform: translate(-50%, -50%);
 }
+
+#mensaje:after {
+	content: " ";
+	position: absolute;
+	width: 40px;
+	height: 60px;
+	top: 50px;
+	left: 50px;
+	border-radius: 20px;
+	box-shadow: inset 0px 0px #a9def9, inset -16px 0px 1px 2px #a9def9;
+	z-index: 1;
+}
+
 #miTexto {
-	position: absolute; /* Establece la posición absoluta */
-	top: 600px; /* Ajusta la posición vertical (Y) en píxeles */
-	left: 70px; /* Ajusta la posición horizontal (X) en píxeles */
-	font-size: 45px; /* Tamaño de fuente personalizado */
-	font-weight: bold; /* Hace que el texto sea más grueso */
-	color: rgb(60, 255, 0); /* Color de texto personalizado */
-	/* Otros estilos personalizados */
-  }
-#intro p{
-  width:400px;
-  margin:20px auto;
-  font-family:sans-serif;
+	position: absolute;
+	top: 600px;
+	left: 70px;
+	font-size: 45px;
+	font-weight: bold;
+	color: rgb(60, 255, 0);
 }
-.hidden{
-  display:none;
+
+#intro p {
+	width: 400px;
+	margin: 20px auto;
+	font-family: sans-serif;
 }
-.mostrar{
-  display:block;
+
+.hidden {
+	display: none;
 }
+
+.mostrar {
+	display: block;
+}
+
 #botonJugar {
 	width: 400px;
 	height: 50px;
-	position: absolute; /* Puedes utilizar 'relative' o 'fixed' según tus necesidades */
-	top: 350px; /* Ajusta la posición vertical (y) según sea necesario */
-	left: 50%; /* Centra el elemento horizontalmente */
-	transform: translateX(-50%); /* Alinea el elemento correctamente en el centro */
+	position: absolute;
+	top: 350px;
+	left: 50%;
+	transform: translateX(-50%);
 	font-size: 30px;
 	background-color: #99c1de;
 	color: #7e186d;
 	border: 0;
 	border-radius: 20px;
 	cursor: copy;
-  }
-div.petalo
-{
-	background-color:#FFFFFF;
+}
+
+div.petalo {
+	background-color: #FFFFFF;
 	border-radius: 40px;
 	width: 80px;
 	height: 80px;
 	position: absolute;
 }
-#centro
-{
+
+#centro {
 	background-color: #DBA901;
 	border-radius: 50px;
 	-webkit-border-radius: 50px;
@@ -101,22 +108,22 @@ div.petalo
 	-o-border-radius: 50px;
 	width: 90px;
 	height: 90px;
-	top:50%;
-	left:48%;
+	top: 50%;
+	left: 48%;
 	position: absolute;
 	margin-top: -50px;
 	margin-left: -50px;
 }
-#tallo
-{
+
+#tallo {
 	width: 15px;
 	height: 150px;
 	background-color: #006c67;
 	margin-top: -100px;
 	margin-left: 145px;
 }
-#hoja
-{
+
+#hoja {
 	background-color: #006c67;
 	border-radius: 15px 0px 15px 0px;
 	width: 20px;
@@ -126,116 +133,102 @@ div.petalo
 	position: absolute;
 }
 
-#flor
-{
+#flor {
 	width: 300px;
 	height: 300px;
 	background-color: transparent;
 	position: relative;
 }
-#p1
-{
-	top:70px;
-	left:40px;
+
+#p1 {
+	top: 70px;
+	left: 40px;
 }
-#p2
-{
-	top:40px;
-	left:110px;
+
+#p2 {
+	top: 40px;
+	left: 110px;
 }
-#p3
-{
-	top:70px;
-	left:160px;
+
+#p3 {
+	top: 70px;
+	left: 160px;
 }
-#p4
-{
-	top:145px;
-	left:44px;
+
+#p4 {
+	top: 145px;
+	left: 44px;
 }
-#p5
-{
-	top:170px;
-	left:110px;
+
+#p5 {
+	top: 170px;
+	left: 110px;
 }
-#p6
-{
-	top:140px;
-	left:160px;
+
+#p6 {
+	top: 140px;
+	left: 160px;
 }
-#figura{
+
+#figura {
 	position: relative;
 	background-color: transparent;
-	top:200px ;
+	top: 200px;
 	left: 0px;
 	width: 360px;
 	margin: auto;
 }
-#cesped{
+
+#cesped {
 	position: absolute;
 	width: 394px;
 	position: absolute;
 	bottom: -40px;
 }
-.manga{
+
+.manga {
 	background: #80ed99;
-	transform:rotate(45deg);
-	-webkit-transform:rotate(45deg);
-	-moz-transform:rotate(45deg);
-	-ms-transform:rotate(45deg);
-	-o-transform:rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
 	width: 50px;
 	height: 50px;
 	display: inline-block;
 }
-.fondo_manga{
-  background: #80ed99;
-  height: 50px;
-  left: -10px;
-  position: absolute;
-  top: 26px;
-  width: 394px;
+
+.fondo_manga {
+	background: #80ed99;
+	height: 50px;
+	left: -10px;
+	position: absolute;
+	top: 26px;
+	width: 394px;
 }
 
-#postit{
-  position:fixed;
-  background:#e9ff70;
-  width:150px;
-  height:150px;
-  margin:20px;
-  right:10px;
-  padding:20px;
-}
-@keyframes caida {
-  to {
-      transform: translateY(100px);
-      opacity: 0;
-  }
+#postit {
+	position: fixed;
+	background: #e9ff70;
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+	right: 10px;
+	padding: 20px;
 }
 
-
-
-.petalo.animated.fadeOutDown {
-  animation: caida 0.5s ease forwards;
-}
+/* Estilos para pantallas más pequeñas (máximo 768px de ancho) */
 @media (max-width: 768px) {
 	#botonJugar {
-	  width: 100%; /* Ocupar el ancho completo del contenedor */
-	  max-width: 300px; /* Limitar el ancho máximo para que no sea demasiado ancho en pantallas grandes */
-	  margin: 20px auto; /* Agregar margen en dispositivos móviles para centrarlo */
+		width: 100%;
+		max-width: 300px;
+		margin: 20px auto;
 	}
 	#mensaje {
-		right: 10%; /* Ajusta la posición en pantallas más pequeñas */
-		width: 100%; /* Ocupar el ancho completo del contenedor */
-		max-width: 250px; /* Limitar el ancho máximo */
-		font-size: 16px; /* Tamaño de fuente más pequeño */
-	  }
-	
-	  /* Agrega estilos adicionales para elementos que necesiten ajustarse en pantallas más pequeñas */
+		right: 10%;
+		width: 100%;
+		max-width: 250px;
+		font-size: 16px;
 	}
-	
-	
-	
-	
-	
-	
+	/* Otros estilos para dispositivos móviles */
+}
